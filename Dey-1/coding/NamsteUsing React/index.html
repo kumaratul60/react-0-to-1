@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React js</title>
+  </head>
+  <body>
+    <div id="root_test">Not Rendered</div>
+  </body>
+
+  <!-- adding react CDN files  -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+
+  <script>
+    // const heading = React.createElement('tag', 'object','what you need to put inside the tag')
+
+    //  React.createElement is a an object at the end
+
+    const heading1 = React.createElement(
+      "h1",
+      { id: "styleOfH1" },
+
+      "hello heading1"
+    );
+
+    const heading2 = React.createElement(
+      "h2",
+      { className: "styleOfH2" },
+      "hello heading2"
+    );
+
+    const heading3 = React.createElement(
+      "p",
+      { className: "styleOFPara", id: "styleOFPara_ID" },
+      "hello Para"
+    );
+
+    const heading4 = React.createElement("b", null, "check null");
+
+    const heading5 = React.createElement("h5", undefined, "check undefined");
+
+    const heading6 = React.createElement("span", {}, "check empty object");
+
+    const container = React.createElement("div", { className: "wrapper" }, [
+      heading1,
+      heading2,
+      heading3,
+      heading4,
+      heading5,
+      heading6,
+    ]);
+
+    console.log(container);
+
+    // passing a react element inside the root
+    const root = ReactDOM.createRoot(document.getElementById("root_test"));
+    root.render(container);
+  </script>
+</html>

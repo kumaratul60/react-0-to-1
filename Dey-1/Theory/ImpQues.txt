@@ -1,0 +1,86 @@
+
+
+1. What is Emmet ?
+  
+    * Emmet is a utility library for generating HTML and XML, React from JavaScript.It makes easy to create reusable components.    
+
+2. Difference between library and framework ? 
+
+  Library: Library is a collection of reusable code along with the pre-defined helper functions, objects, classes, modules that can   
+          be used in code. 
+
+          Example: React, ReactDOM react-router-dom, express, Lodash, etc. 
+
+  Framework: Framework is a set of reusable code and a set of conventions for developing software.  
+
+         Example: NodeJS, Next JS, Angular etc.  
+
+  The key difference between a library and a framework is => “Inversion of Control”. 
+
+    When calling a method from a library, the developer is in control. With a framework, the control is inverted: the framework calls 
+    the developer's code. 
+
+3. What is JavaScript?  
+
+ Javascript is a dynamic typed, high-level, loosely-coupled, object oriented, prototype-based, Synchronous, Single threaded language.
+
+ JavaScript follows functional & Object-Oriented Programming Paradigm mostly.
+
+4. What is React ?
+   React is a JavaScript library for building user interfaces. React was created by Facebook in 2013. React is known for its 
+   simplicity, reactivity, reusability and comparability.
+
+5. What is crossorigin in script tag ?
+    When you use the crossorigin attribute in a script tag, you're telling the browser to allow the script to run from a different 
+    domain than the page itself. This is useful if you want to run a script from a different domain than the one where the page is 
+    hosted.
+
+    Setting the attribute name to an empty value, like crossorigin or crossorigin="" , is the same as anonymous .
+    
+    <script crossorigin src="app.js"></script>
+    <script crossorigin="" src="app.js"></script>
+    <script crossorigin="anonymous or xyz" src="app.js"></script>
+
+6. What is difference between React and ReactDOM?
+   React is a library for building user interfaces
+   ReactDOM is a library for rendering React components into HTML. It contains DOM manipulation utilities.
+
+   * Why separate both in form of React and ReactDOM?
+
+   The reason React and ReactDOM were split into two libraries was due to the arrival of React Native (A react platform for mobile 
+   development).
+
+  React components are such a great way to organize UI that it has now spread to mobile to react is used in web and in mobile. react- 
+  dom is used only in web apps.
+
+7. What is the difference between react.production.js and react.development.js ?
+  react.production.js - production code that is minified and use in production environments.
+  react.development.js - More readable and developer friendly code that can be used to debug,manipulation of code in development or 
+  staging environments.    
+
+
+8.  What is async and defer in JS ?
+
+    async and defer are two keywords in JavaScript that allow you to create functions that run asynchronously.
+
+    defer => defer is used for scripts that need the whole DOM and/or their relative execution order is important. 
+    async => async is used for independent scripts, like counters or ads,and their relative execution order does not matter.
+
+    async executes as soon as possible while defer runs in sequence toward the end of the loading process, just before the 
+    DOMContentLoaded event.
+
+    async:
+        1. async is used for independent scripts
+        2. Downloads in the background at a low priority (same as defer)
+        3. Can interrupt page rendering to execute
+        4. Executes as soon as possible and in no particular order
+
+     =>  async is best for very high priority JavaScript resources that should run as early as possible in the loading process. 
+
+    defer:
+        1. Downloads in the background at a low priority (same as async)
+        2. Won't interrupt page rendering to execute
+        3. Executes in sequence just before the DOMContentLoaded event
+
+     =>    defer is ideal for general JavaScript resources that aren't critical to the initial rendering of the page and can be run 
+           later in the loading process.
