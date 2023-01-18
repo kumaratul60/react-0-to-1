@@ -23,13 +23,13 @@ create-react-app used webpack bundler internally.
 
 `~version` => --- tilde --- ==> _Approximately equivalent to version_
 
-Ex: ^2.3.1 => this version means -> 2 pointing to Major change, 3 pointing to Minor change, 1 pointing to Patch change
+Ex: `^2.3.1` => this version means -> _2 pointing to Major change_, _3 pointing to Minor change_, _1 pointing to Patch change_
 
-Major => breaking change
+* Major => breaking change
 
-Minor => 1. backwards compatible new functionality, 2. old functionality deprecated, but operational, 3. large internal refactor
+* Minor => 1. backwards compatible new functionality, 2. old functionality deprecated, but operational, 3. large internal refactor
 
-Path => bug fixes
+* Path => bug fixes
 
 3. Why we use `package-lock.json` ?
 
