@@ -9,6 +9,7 @@
 
    That means webpack can grab all of your code, manage the dependencies, remove dead code that's not required, and
    spit out an optimized JavaScript file.
+
    Webpack allows you to import modules during runtime dynamically.
    It can preprocessed or transpile your SASS to CSS, JSX to JS, and lots of other optimizations using webpack plugins.
 
@@ -18,18 +19,22 @@ create-react-app used webpack bundler internally.
 
 2. Difference between `^version` & `~version`.
 
-^version => caret ==> Compatible with version
-~version => tilde ==> Approximately equivalent to version
+`^version` => --- caret --- ==> _Compatible with version_
 
-^2.3.1 => this version means -> 2 pointing to Major change, 3 pointing to Minor change, 1 pointing to Patch change
+`~version` => --- tilde --- ==> _Approximately equivalent to version_
+
+Ex: ^2.3.1 => this version means -> 2 pointing to Major change, 3 pointing to Minor change, 1 pointing to Patch change
 
 Major => breaking change
+
 Minor => 1. backwards compatible new functionality, 2. old functionality deprecated, but operational, 3. large internal refactor
+
 Path => bug fixes
 
 3. Why we use `package-lock.json` ?
 
 It locks the version which is used inside project.
+
 It tells that what is exact version of dependency you used in our project
 
 4. What is `node-modules` ?
