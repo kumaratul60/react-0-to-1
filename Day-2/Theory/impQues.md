@@ -29,46 +29,54 @@
  Path => bug fixes
 
 3. Why we use `package-lock.json` ?
+
   It locks the version which is used inside project.
   It tells that what is exact version of dependency you used in our project
 
 4. What is `node-modules` ?
+
   Node modules is a database of npm.
   It keep a track of all dependencies.
 
 5. What is `NPM`?
+
       we have to manage a lot of packages a react app is huge app which does not run in a react there are lot of super power which it 
       needs those super powers are come from different packages are done by npm.
 
 6. What is `Parcel/Webpack`? Why do we need it?
+
      parcel or webpack is one of the Bundlers that we use in our project to make our app more faster through caching while 
     development,optimized, minified,compatible with different browser ,cleaning our code and much more.
 
 7. What is `.parcel-cache`?
+
      The .cache folder stores the information of your project when parcel builds it. So when you rebuild the project, it doesn't have 
      to re-parse and re-analyze everything.
      Parcel-cache is location where parcel store all the previous build related information. This help parcel to retrieve.
      previous build information and which in turn reduce the build duration.
 
 8. What is `npx` ?
+
      npx -  It is Node package executer tool. 
      It enables npm to execute command-line Node.js tools without having them to be installed globally. Command-line tools like mocha, 
      gulp, react-native etc., are commonly installed globally using the -g flag with npm.
 
-9. What is difference between `dependencies` vs `devDependencies`
+9. What is difference between `dependencies` vs `devDependencies` ?
+
      dependencies - it contains an the library, which our project requires for production or runtime.
      
      devDependencies- it is a package in the package.json file that we need only for project development purpose.
 
-10. What is Tree Shaking?
-    Tree shaking is a form of Dead code elimination. The term "tree shaking" comes from the mental model of your application and its 
+10. What is `Tree Shaking`?
+
+    Tree shaking is a form of `Dead code elimination`. The term "tree shaking" comes from the mental model of your application and its 
     dependencies as a tree-like structure.
 
      In production builds, Parcel statically analyzes the imports and exports of each module, and removes everything that isn't used 
      this is called "tree shaking" or "dead code elimination". Tree shaking is supported for both static and dynamic import(), 
      CommonJS and ES modules, and even across languages with CSS modules.
 
-11. What is Hot Module Replacement?
+11. What is `Hot Module Replacement`?
 
     Hot Module Replacement (HMR) is a feature to update the application modules without reloading and repainting everything.
     By using the HMR technique the application development becomes faster as fewer resources are loaded after saving the changes in 
@@ -110,10 +118,12 @@
         is required on initial load.
 
 13. What is `.gitignore`? What should we add and not add into it?
+
      gitignore is a file which keeps track of the files & folders that are not meant to be pushed to the code repository.
      example : .parcel-cache,node_modules,dist etc. 
 
 14. What is the difference between `package.json` and `package-lock.json`?
+
      `package.json`  -  it is created during npm initialization because, it manage lot of packages.
       The package.json file has the metadata of the project, The project's basic information, such as package name, version, 
       description, author, dependencies,
@@ -122,15 +132,18 @@
       on our production. It also tell current version of library which we are using.And it also maintain its integrity .
         
 15. Why should I not modify `package-lock.json`?
+
     package-lock.json actually is large information center which keeps track of package and version and dependency information which 
     is used to run app if that get modified then it will create conflict at server and gets error.
 
-16. What is `node_modules` ? Is it a good idea to push that on git?
+16. What is `node_modules` ? Is it a good idea to push that on `git`?
+
     Node module is a kind of database for npm. 
     It is a folder that contains or keep track of all the packages and dependencies used the the development of the applications. \n 
     It is big file that we should not push to github.
 
 17. What is the `dist` folder?
+
    dist folder is created when parcel creates the build for the application . It contains the HTML and CSS and JS with other files for 
     the build.This will created when we run `npx parcel build entry-file(index.html)`.
 
@@ -144,4 +157,5 @@
            - "> 0.5%, last 2 versions, not dead"   
 
 19. What is `Transitive Dependencies` ?
+
    Transitive Dependencies:  We've package manager which handles and take care of Transitive Dependencies
