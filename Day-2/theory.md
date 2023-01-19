@@ -13,7 +13,7 @@
    Webpack allows you to import modules during runtime dynamically.
    It can preprocessed or transpile your SASS to CSS, JSX to JS, and lots of other optimizations using webpack plugins.
 
-   => removing unused code or dead code is know as tree shaking.
+   => _removing unused code or dead code is know as tree shaking._
 
 create-react-app used webpack bundler internally.
 
