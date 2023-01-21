@@ -15,8 +15,8 @@
 
 The key difference between a library and a framework is => `“Inversion of Control”`.
 
-    _When calling a method from a library, the developer is in control. With a framework, the control is inverted: the framework calls
-    the developer's code._
+    When calling a method from a library, the developer is in control. With a framework, the control is inverted: the framework calls
+    the developer's code.
 
 3. What is `JavaScript`?
 
