@@ -1,34 +1,35 @@
-1. What is Emmet ?
+1. What is `Emmet` ?
 
    - Emmet is a utility library for generating HTML and XML, React from JavaScript.It makes easy to create reusable components.
 
-2. Difference between library and framework ?
+2. Difference between `library` and `framework` ?
 
- Library: Library is a collection of reusable code along with the pre-defined helper functions, objects, classes, modules that can  
+ * Library: Library is a collection of reusable code along with the pre-defined helper functions, objects, classes, modules that can  
  be used in code.
 
     Example: React, ReactDOM react-router-dom, express, Lodash, etc.
 
-Framework: Framework is a set of reusable code and a set of conventions for developing software.
+* Framework: Framework is a set of reusable code and a set of conventions for developing software.
 
     Example: NodeJS, Next JS, Angular etc.
 
-The key difference between a library and a framework is => “Inversion of Control”.
+The key difference between a library and a framework is => `“Inversion of Control”`.
 
-    When calling a method from a library, the developer is in control. With a framework, the control is inverted: the framework calls
-    the developer's code.
+    _When calling a method from a library, the developer is in control. With a framework, the control is inverted: the framework calls
+    the developer's code._
 
-3. What is JavaScript?
+3. What is `JavaScript`?
 
-Javascript is a dynamic typed, high-level, loosely-coupled, object oriented, prototype-based, Synchronous, Single threaded language.
+* Javascript is a dynamic typed, high-level, loosely-coupled, object oriented, prototype-based, Synchronous, Single threaded language.
 
-JavaScript follows functional & Object-Oriented Programming Paradigm mostly.
+* JavaScript follows functional & Object-Oriented Programming Paradigm mostly.
 
-4. What is React ?
+4. What is `React` ?
+
    React is a JavaScript library for building user interfaces. React was created by Facebook in 2013. React is known for its
    simplicity, reactivity, reusability and comparability.
 
-5. What is crossorigin in script tag ?
+5. What is crossorigin in `script tag` ?
 
    The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
 
@@ -39,20 +40,24 @@ JavaScript follows functional & Object-Oriented Programming Paradigm mostly.
    Setting the attribute name to an empty value, like crossorigin or crossorigin="" , is the same as anonymous .
 
    <script crossorigin src="app.js"></script>
+
    <script crossorigin="" src="app.js"></script>
+
    <script crossorigin="anonymous or xyz" src="app.js"></script>
+
 
    Web pages often make requests to load resources on other servers. Here is where CORS comes in.
 
    A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
 
-   CORS is used to manage cross-origin requests.
+   `CORS` is used to manage cross-origin requests.
 
-6. What is difference between React and ReactDOM?
+6. What is difference between `React` and `ReactDOM`?
+
    React is a library for building user interfaces
    ReactDOM is a library for rendering React components into HTML. It contains DOM manipulation utilities.
 
-   - Why separate both in form of React and ReactDOM?
+  * - Why separate both in form of React and ReactDOM?
 
    The reason React and ReactDOM were split into two libraries was due to the arrival of React Native (A react platform for mobile
    development).
@@ -60,7 +65,8 @@ JavaScript follows functional & Object-Oriented Programming Paradigm mostly.
 React components are such a great way to organize UI that it has now spread to mobile to react is used in web and in mobile. react-
 dom is used only in web apps.
 
-7. What is the difference between react.production.js and react.development.js ?
+7. What is the difference between `react.production.js` and `react.development.js` ?
+
    react.production.js - production code that is minified and use in production environments.
 
 some use-case for react.production:
@@ -76,11 +82,12 @@ some use-case for react.production:
 react.development.js - More readable and developer friendly code that can be used to debug,manipulation of code in development or
 staging environments.
 
-8.  What is async and defer in JS ?
+8.  What is `async` and `defer` in JS ?
 
     async and defer are two keywords in JavaScript that allow you to create functions that run asynchronously.
 
     defer => defer is used for scripts that need the whole DOM and/or their relative execution order is important.
+
     async => async is used for independent scripts, like counters or ads,and their relative execution order does not matter.
 
     async executes as soon as possible while defer runs in sequence toward the end of the loading process, just before the
@@ -91,19 +98,22 @@ staging environments.
 
     => async is best for very high priority JavaScript resources that should run as early as possible in the loading process.
 
-    defer: 1. Downloads in the background at a low priority (same as async) 2. Won't interrupt page rendering to execute 3. Executes 
-    in sequence just before the DOMContentLoaded event
+    defer:
+     1. Downloads in the background at a low priority (same as async) 
+     2. Won't interrupt page rendering to execute 
+     3. Executes in sequence just before the DOMContentLoaded event
 
     => defer is ideal for general JavaScript resources that aren't critical to the initial rendering of the page and can be run
     later in the loading process.
 
-9.  What is CORS?
+9.  What is `CORS`?
 
 𝗖𝗢𝗥𝗦 𝘀𝘁𝗮𝗻𝗱𝘀 𝗳𝗼𝗿 𝗖𝗿𝗼𝘀𝘀-𝗢𝗿𝗶𝗴𝗶𝗻 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲 𝗦𝗵𝗮𝗿𝗶𝗻𝗴
 
 𝘐𝘵'𝘴 𝘢 𝘸𝘢𝘺 𝘧𝘰𝘳 𝘣𝘳𝘰𝘸𝘴𝘦𝘳𝘴 𝘵𝘰 𝘥𝘦𝘵𝘦𝘳𝘮𝘪𝘯𝘦 𝘸𝘩𝘦𝘵𝘩𝘦𝘳 𝘰𝘳 𝘯𝘰𝘵 𝘵𝘩𝘦𝘺 𝘴𝘩𝘰𝘶𝘭𝘥 𝘢𝘭𝘭𝘰𝘸 𝘳𝘦𝘲𝘶𝘦𝘴𝘵𝘴 𝘧𝘳𝘰𝘮 𝘰𝘯𝘦 𝘥𝘰𝘮𝘢𝘪𝘯 𝘵𝘰 𝘢𝘤𝘤𝘦𝘴𝘴 𝘳𝘦𝘴𝘰𝘶𝘳𝘤𝘦𝘴 𝘧𝘳𝘰𝘮 𝘢𝘯𝘰𝘵𝘩𝘦𝘳 𝘥𝘰𝘮𝘢𝘪𝘯. 𝘐𝘵'𝘴 𝘶𝘴𝘦𝘥 𝘸𝘩𝘦𝘯 𝘺𝘰𝘶 𝘸𝘢𝘯𝘵 𝘵𝘰 𝘦𝘮𝘣𝘦𝘥 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘧𝘳𝘰𝘮 𝘰𝘯𝘦 𝘴𝘪𝘵𝘦 𝘪𝘯𝘵𝘰 𝘢𝘯𝘰𝘵𝘩𝘦𝘳 𝘴𝘪𝘵𝘦.
 
 𝗧𝗵𝗲𝗿𝗲 𝗮𝗿𝗲 𝘁𝘄𝗼 𝘁𝘆𝗽𝗲𝘀 𝗼𝗳 𝗖𝗢𝗥𝗦 𝗵𝗲𝗮𝗱𝗲𝗿𝘀:
+
 ① Access-Control-Allow-Origin
 ② Access-Control-Allow-Methods
 
@@ -116,7 +126,7 @@ let's say you're viewing a website and you want to embed a tweet from Twitter on
 
 👂 𝘛𝘩𝘪𝘴 𝘪𝘴 𝘣𝘦𝘤𝘢𝘶𝘴𝘦 𝘵𝘩𝘦 𝘸𝘦𝘣𝘴𝘪𝘵𝘦 𝘺𝘰𝘶'𝘳𝘦 𝘷𝘪𝘦𝘸𝘪𝘯𝘨 𝘱𝘳𝘰𝘣𝘢𝘣𝘭𝘺 𝘥𝘰𝘦𝘴𝘯'𝘵 𝘩𝘢𝘷𝘦 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯 𝘵𝘰 𝘢𝘤𝘤𝘦𝘴𝘴 𝘛𝘸𝘪𝘵𝘵𝘦𝘳'𝘴 𝘴𝘦𝘳𝘷𝘦𝘳𝘴.
 
-10. What is CDN and why do we use it ?
+10. What is `CDN` and why do we use it ?
 
     A CDN is a Content Delivery Network – a global network of servers that work together to provide ultra-fast delivery of Internet
     content, such as web pages and streaming video.
