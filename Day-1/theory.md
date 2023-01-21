@@ -139,9 +139,15 @@ because that’s where she lives. Khalid’s video is delivered from a data-cent
 moment.
 
 We use CDN for following reasons:
+
 1 Lower latency and faster performance.
+
 2 Better security and DDoS protection.
+
 3 Traditional web hosts are unable to keep up with the pace of change.
+
 4 SEO advantage.
+
 5 More affordable.
+
 6 Reliable.
