@@ -16,6 +16,7 @@ Parcel do:
 * parcel manage port number also
 * Consistent Hashing Algorithm todo all bundling 
 * Parcel is a Zero config bundler
+* Tree-shaking => Removing un-wanted code
 
 * Transitive Dependencies:  We've package manager which handles and take care of Transitive Dependencies
 

@@ -1,1 +1,1 @@
-## Learn React from besic to advance 
+## Learn React from basic to advance  
