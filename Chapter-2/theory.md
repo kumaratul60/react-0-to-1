@@ -19,9 +19,15 @@ create-react-app used webpack bundler internally.
 
 2. Difference between `^version` & `~version`.
 
-`^version` => --- caret --- ==> _Compatible with version_
+`^version` => --- caret --- ==> _Compatible with version_ -> if want to auto upgrade dependency in minor version use ^
 
-`~version` => --- tilde --- ==> _Approximately equivalent to version_
+`~version` => --- tilde --- ==> _Approximately equivalent to version_ -> if want to auto upgrade dependency in major version use ~
+
+`^2.3.1` =>  Auto upgrade minor version
+
+`~2.3.1` => Auto upgrade major version
+
+`2.3.1` => Do not auto upgrade, stick with same version, I don't want any updates'
 
 Ex: `^2.3.1` => this version means -> _2 pointing to Major change_, _3 pointing to Minor change_, _1 pointing to Patch change_
 
@@ -35,7 +41,7 @@ Ex: `^2.3.1` => this version means -> _2 pointing to Major change_, _3 pointing 
 
 It locks the version which is used inside project.
 
-It tells that what is exact version of dependency you used in our project
+It tells that what is exact version of dependency you used in our project in production mode.
 
 4. What is `node-modules` ?
 
