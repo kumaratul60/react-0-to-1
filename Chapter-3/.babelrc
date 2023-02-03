@@ -1,0 +1,6 @@
+// .babelrc is the configuration file of babel
+
+// with options
+{
+  // "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]]
+}
