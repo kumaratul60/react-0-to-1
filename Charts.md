@@ -1,5 +1,5 @@
 ## Bar charts:
- Used to compare values across different categories. They can be vertical (column chart) or horizontal (bar chart)
+* Used to compare values across different categories. They can be vertical (column chart) or horizontal (bar chart)
 
 ## Line charts: 
 * Used to show trends over time or across different categories.
