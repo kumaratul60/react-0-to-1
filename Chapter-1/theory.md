@@ -4,7 +4,7 @@
 
 2. Difference between `library` and `framework` ?
 
- * Library: Library is a collection of reusable code along with the pre-defined helper functions, objects, classes, modules that can  
+ * Library: Library is a collection of reusable code along with the pre-defined helper functions, objects, classes, modules that can
  be used in code.
 
     Example: React, ReactDOM react-router-dom, express, Lodash, etc.
@@ -39,11 +39,11 @@ The key difference between a library and a framework is => `“Inversion of Cont
 
    Setting the attribute name to an empty value, like crossorigin or crossorigin="" , is the same as anonymous .
 
+   ```
    <script crossorigin src="app.js"></script>
-
    <script crossorigin="" src="app.js"></script>
-
    <script crossorigin="anonymous or xyz" src="app.js"></script>
+   ```
 
 
    Web pages often make requests to load resources on other servers. Here is where CORS comes in.
@@ -93,14 +93,17 @@ staging environments.
     async executes as soon as possible while defer runs in sequence toward the end of the loading process, just before the
     DOMContentLoaded event.
 
-    async: 1. async is used for independent scripts 2. Downloads in the background at a low priority (same as defer) 3. Can interrupt 
+    async:
+    1. async is used for independent scripts
+    2. Downloads in the background at a low priority (same as defer)
+    3. Can interrupt
     page rendering to execute 4. Executes as soon as possible and in no particular order
 
     => async is best for very high priority JavaScript resources that should run as early as possible in the loading process.
 
     defer:
-     1. Downloads in the background at a low priority (same as async) 
-     2. Won't interrupt page rendering to execute 
+     1. Downloads in the background at a low priority (same as async)
+     2. Won't interrupt page rendering to execute
      3. Executes in sequence just before the DOMContentLoaded event
 
     => defer is ideal for general JavaScript resources that aren't critical to the initial rendering of the page and can be run
@@ -138,16 +141,16 @@ Simple example: Jane and Khalid both watch the latest viral video. Jane’s vide
 because that’s where she lives. Khalid’s video is delivered from a data-center in Singapore, because that’s where he is at the
 moment.
 
-We use CDN for following reasons:
+We use `CDN` for following reasons:
 
-1 Lower latency and faster performance.
+1. Lower latency and faster performance.
 
-2 Better security and DDoS protection.
+2. Better security and DDoS protection.
 
-3 Traditional web hosts are unable to keep up with the pace of change.
+3. Traditional web hosts are unable to keep up with the pace of change.
 
-4 SEO advantage.
+4. SEO advantage.
 
-5 More affordable.
+5. More affordable.
 
-6 Reliable.
+6. Reliable.
