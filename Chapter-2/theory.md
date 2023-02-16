@@ -23,7 +23,7 @@ create-react-app used webpack bundler internally.
 
 `~version` => --- tilde --- ==> _Approximately equivalent to version_ -> if want to auto upgrade dependency in major version use ~
 
-`^2.3.1` =>  Auto upgrade minor version
+`^2.3.1` => Auto upgrade minor version
 
 `~2.3.1` => Auto upgrade major version
 
@@ -31,11 +31,11 @@ create-react-app used webpack bundler internally.
 
 Ex: `^2.3.1` => this version means -> _2 pointing to Major change_, _3 pointing to Minor change_, _1 pointing to Patch change_
 
-* Major => breaking change
+- Major => breaking change
 
-* Minor => 1. backwards compatible new functionality, 2. old functionality deprecated, but operational, 3. large internal refactor
+- Minor => 1. backwards compatible new functionality, 2. old functionality deprecated, but operational, 3. large internal refactor
 
-* Path => bug fixes
+- Path => bug fixes
 
 3. Why we use `package-lock.json` ?
 
@@ -133,6 +133,11 @@ It keep a track of all dependencies.
     gitignore is a file which keeps track of the files & folders that are not meant to be pushed to the code repository.
     example : .parcel-cache,node_modules,dist etc.
 
+    Always put`parcel-cache`,`node_modules`,`dist`,`env`,`build`,`coverage`,etc files
+    inside the `.gitignore` file.
+
+Never put `package-lock.json` file inside `.gitignore` file.
+
 14. What is the difference between `package.json` and `package-lock.json`?
 
     `package.json` - it is created during npm initialization because, it manage lot of packages.
@@ -151,7 +156,7 @@ It keep a track of all dependencies.
 
     Node module is a kind of database for npm.
     It is a folder that contains or keep track of all the packages and dependencies used the the development of the applications. \n
-    It is big file that we should not push to github.
+    It is big file that we should not push to `github`.
 
 17. What is the `dist` folder?
 
@@ -169,4 +174,5 @@ It keep a track of all dependencies.
 
 19. What is `Transitive Dependencies` ?
 
-    Transitive Dependencies: We've package manager which handles and take care of Transitive Dependencies
+    Transitive Dependencies: We've package manager which handles and take care of Transitive Dependencies.
+     _For example, if A depends on B and B depends on C, then A must also depend on C._
